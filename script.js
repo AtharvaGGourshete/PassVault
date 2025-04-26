@@ -40,7 +40,7 @@ const showPasswords = () => {
     let tb = document.querySelector("table")
     let data = localStorage.getItem("passwords")
     if (data == null || JSON.parse(data).length == 0) {
-        tb.innerHTML = "No Data To Show"
+        tb.innerHTML = "Add Passwords"
     }
     else {
         tb.innerHTML =  `<tr>
